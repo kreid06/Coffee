@@ -9,7 +9,7 @@
     "db:create": "createdb coffee-orders-app",
     "db:init":"psql -f schema.sql coffee-orders-app && psql -f seed.sql coffee-orders-app",
     "db:destroy": "dropdb coffee-orders-app",
-    "db:reset": "npm run db:destroy; npm tun db:create && npm run db:init",
+    "db:reset": "npm run db:destroy; npm run db:create && npm run db:init",
     "test": "mocha",
     "test:watch":"mocha -w"
   },

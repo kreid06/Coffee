@@ -7,7 +7,7 @@ class Coffee {
         this.bespoke = bespoke;
         this.size = size;
     }
-    static getById(id) {
+    static getbyId(id) {
         return db.one(`select * from coffee where id=${id}`)
         .then((oneCoffeeData)=> {
             const coffeeInstance = new Coffee(oneCoffeeData.id,

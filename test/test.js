@@ -14,7 +14,10 @@ describe('Sanity Check', () => {
 });
 
 describe('Coffee Model', async () => {
-    const coffeeData = await Coffee.getbyId(3);
-    console.log(coffeeData);
-    expect(coffeeData).to.be.an.instanceOf(Coffee);
+    it('Something here', async ()=> {
+        const coffeeData = await Coffee.getbyId(3);
+        console.log(coffeeData);
+        expect(coffeeData).to.be.an.instanceOf(Coffee);
+    })
+    
 })

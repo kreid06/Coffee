@@ -7,7 +7,7 @@ const intitOptions = {
 const config = {
     host: 'localhost',
     port: 5432,
-    database: 'super_awesome_application',
+    database: 'super_awesome_application',                  
     user: 'kevin01'
 };
 
